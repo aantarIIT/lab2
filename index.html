@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Information Form</title>
+    <title>Lab 2 Submission Form</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main>
-        <h1>User Information</h1>
-        <form action="/submit" method="post" autocomplete="on">
-            <div class="form-group">
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required autocomplete="email">
+    <main class="container">
+        <h1 class="page-title">Personal Information</h1>
+        <form action="/process" method="post" autocomplete="on" class="data-form">
+            <div class="input-wrapper">
+                <label for="user-email" class="input-label">Email:</label>
+                <input type="email" id="user-email" name="user-email" required autocomplete="email" class="input-field">
             </div>
-            <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required autocomplete="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+            <div class="input-wrapper">
+                <label for="user-phone" class="input-label">Phone:</label>
+                <input type="tel" id="user-phone" name="user-phone" required autocomplete="tel" pattern="^(\d{3}-?\d{3}-?\d{4})$" class="input-field">
             </div>
-            <div class="form-group">
-                <label for="dob">Date of Birth:</label>
-                <input type="date" id="dob" name="dob" required autocomplete="bday">
+            <div class="input-wrapper">
+                <label for="user-birthdate" class="input-label">Birth Date:</label>
+                <input type="date" id="user-birthdate" name="user-birthdate" required autocomplete="bday" class="input-field">
             </div>
-            <div class="form-group">
-                <button type="submit">Submit</button>
+            <div class="input-wrapper">
+                <button type="submit" class="submit-btn">Submit</button>
             </div>
         </form>
     </main>
