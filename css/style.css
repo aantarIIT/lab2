@@ -2,22 +2,18 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     padding: 1.25rem;
-    background-color: #f4f4f4;
-}
-
-.container {
-    max-width: 100%;
-    margin: 0 auto;
     background-color: #ffffff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333;
 }
 
 .page-title {
     text-align: center;
     margin-bottom: 1.5rem;
-    color: #333;
+}
+
+.data-form {
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .input-wrapper {
@@ -28,7 +24,6 @@ body {
     display: block;
     margin-bottom: 0.3rem;
     font-weight: 600;
-    color: #555;
 }
 
 .input-field {
@@ -64,7 +59,11 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .container {
+    body {
+        padding: 2rem;
+    }
+
+    .data-form {
         max-width: 600px;
     }
 
